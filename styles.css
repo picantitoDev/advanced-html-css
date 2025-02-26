@@ -1,9 +1,9 @@
 @keyframes rotateCube {
   0% {
-    transform: rotateX(0deg) rotateY(0deg);
+    transform: rotate3d(1, 1, 0, 0deg);
   }
   100% {
-    transform: rotateX(360deg) rotateY(360deg);
+    transform: rotate3d(1, 1, 0, 360deg);
   }
 }
 
@@ -39,11 +39,11 @@
 }
 .back {
   background: yellow;
-  transform: translateZ(-150px) rotateY(180deg);
+  transform: translateZ(-150px);
 }
 .left {
   background: red;
-  transform: translateX(-150px) rotateY(-90deg);
+  transform: translateX(-150px) rotateY(90deg);
 }
 .right {
   background: blue;
@@ -51,9 +51,9 @@
 }
 .top {
   background: orange;
-  transform: translateY(-150px) rotateX(-90deg);
+  transform: translateY(150px) rotateX(90deg);
 }
 .bottom {
   background: purple;
-  transform: translateY(150px) rotateX(90deg);
+  transform: translateY(-150px) rotateX(90deg);
 }
