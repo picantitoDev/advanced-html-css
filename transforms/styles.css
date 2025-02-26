@@ -1,0 +1,47 @@
+.rotate-by-deg {
+  transform: rotate(24deg);
+}
+
+.rotate-by-rad {
+  transform: rotate(4rad);
+}
+
+.rotate-by-turn {
+  transform: rotate(1turn);
+}
+
+body {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+p {
+  margin-bottom: 16px;
+}
+
+img {
+  width: 60px;
+}
+
+div,
+* + p {
+  margin-top: 1.5rem;
+}
+
+.scaleX {
+  transform: scaleX(2);
+  transform: scaleY(1.25);
+}
+
+.scaleY {
+  transform: scaleY(1.5);
+}
+
+.scaleXY {
+  transform: scale(0.25, 1.5);
+}
+
+.scale {
+  transform: scale(0.5);
+}
