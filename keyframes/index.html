@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
+      * {
+        background-color: black;
+      }
       .container {
         height: 100vh;
         width: 100vw;
@@ -14,34 +17,29 @@
       }
 
       #ball {
-        width: 100px;
-        height: 100px;
-        background-color: red;
-        border: 1px solid black;
-        border-radius: 50%;
-        animation-duration: 2s;
-        animation-name: change-color;
-        animation-iteration-count: infinite;
-        animation-direction: alternate;
-      }
-      #ball {
-        /* ... other CSS properties ... */
-        background-color: red;
-        animation: 2s change-color infinite alternate;
+        width: 50px;
+        height: 50px;
+        border: 6px solid aqua;
+        border-radius: 4px;
+        box-shadow: 0 0 8px aqua, 0 0 8px aqua inset;
+        animation: 2s loading ease-in-out infinite;
+        z-index: 10;
       }
 
-      @keyframes change-color {
-        from {
-          background-color: red;
+      @keyframes loading {
+        0% {
         }
 
-        50% {
-          transform: scale(2);
-          background-color: blue;
+        33% {
+          transform: rotate(360deg);
         }
 
-        to {
-          background-color: green;
+        67% {
+          transform: rotate(360deg) rotateY(180deg);
+        }
+
+        100% {
+          transform: rotate(360deg) rotateY(180deg) rotateX(180deg);
         }
       }
     </style>
